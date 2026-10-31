@@ -1,0 +1,41 @@
+# Supports d'installation et disques virtuels
+*.iso
+*.qcow2
+*.raw
+*.img
+*.vmdk
+*.vdi
+*.vhd
+*.vhdx
+*.vmdk.lck
+
+# Secrets et identifiants
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*private_key*
+*.kdbx
+
+# Environnements et caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Travail temporaire
+*.tmp
+*.bak

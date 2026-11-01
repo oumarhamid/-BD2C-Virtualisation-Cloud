@@ -1,0 +1,15 @@
+Architecture:                            x86_64
+CPU(s):                                  2
+Model name:                              Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+Virtualization:                          VT-x
+Hypervisor vendor:                       VMware
+4
+kvm_intel             536576  0
+kvm                  1507328  1 kvm_intel
+irqbypass              16384  1 kvm
+crw-rw----+ 1 root kvm 10, 232 oct.  31 21:36 /dev/kvm
+               total       utilisé      libre     partagé tamp/cache   disponible
+Mem:           2,9Gi       1,2Gi       130Mi        35Mi       1,7Gi       1,6Gi
+Échange:       2,9Gi       324Ki       2,9Gi
+Sys. de fichiers Taille Utilisé Dispo Uti% Monté sur
+/dev/sda2           98G     12G   82G  13% /

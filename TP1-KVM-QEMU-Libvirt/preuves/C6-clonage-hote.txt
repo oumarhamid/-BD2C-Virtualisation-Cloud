@@ -1,0 +1,40 @@
+=== UUID SOURCE ===
+9b2cc3b8-5883-46e7-99f3-9aa6eac3a687
+
+=== UUID CLONE ===
+f77a05f8-9209-4b68-a4f5-f60ec351eb97
+
+=== MAC SOURCE ===
+ Interface   Type      Source    Model    MAC
+-------------------------------------------------------------
+ -           network   default   virtio   52:54:00:9d:33:f1
+
+=== MAC CLONE ===
+ Interface   Type      Source    Model    MAC
+-------------------------------------------------------------
+ -           network   default   virtio   52:54:00:41:6e:f9
+
+=== DISQUE CLONE ===
+ Target   Source
+-----------------------------------------------------
+ vda      /var/lib/libvirt/images/ubuntu-vm02.qcow2
+ sda      -
+
+=== INFORMATIONS QCOW2 ===
+image: /var/lib/libvirt/images/ubuntu-vm02.qcow2
+file format: qcow2
+virtual size: 15 GiB (16106127360 bytes)
+disk size: 4 GiB
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    compression type: zlib
+    lazy refcounts: true
+    refcount bits: 16
+    corrupt: false
+    extended l2: false
+Child node '/file':
+    filename: /var/lib/libvirt/images/ubuntu-vm02.qcow2
+    protocol type: file
+    file length: 4 GiB (4296081408 bytes)
+    disk size: 4 GiB

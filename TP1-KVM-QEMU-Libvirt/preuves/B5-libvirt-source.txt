@@ -1,0 +1,33 @@
+=== LISTE DES MACHINES VIRTUELLES ===
+ Id   Name          State
+-----------------------------
+ 2    ubuntu-vm01   running
+
+=== INFORMATIONS DE LA VM SOURCE ===
+Id:             2
+Name:           ubuntu-vm01
+UUID:           9b2cc3b8-5883-46e7-99f3-9aa6eac3a687
+OS Type:        hvm
+State:          running
+CPU(s):         2
+CPU time:       466,6s
+Max memory:     2097152 KiB
+Used memory:    2097152 KiB
+Persistent:     yes
+Autostart:      disable
+Managed save:   no
+Security model: apparmor
+Security DOI:   0
+Security label: libvirt-9b2cc3b8-5883-46e7-99f3-9aa6eac3a687 (enforcing)
+
+=== DISQUES DE LA VM SOURCE ===
+ Type   Device   Target   Source
+---------------------------------------------------------------------
+ file   disk     vda      /var/lib/libvirt/images/ubuntu-vm01.qcow2
+ file   cdrom    sda      -
+
+=== INTERFACES RESEAU DE LA VM SOURCE ===
+ Interface   Type      Source    Model    MAC
+-------------------------------------------------------------
+ vnet1       network   default   virtio   52:54:00:9d:33:f1
+

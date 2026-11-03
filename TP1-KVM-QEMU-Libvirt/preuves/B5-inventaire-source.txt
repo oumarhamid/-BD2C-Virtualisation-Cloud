@@ -1,0 +1,17 @@
+=== NOM DU SERVEUR ===
+srv-source
+=== IDENTIFIANT MACHINE ===
+9b2cc3b8588346e799f39aa6eac3a687
+=== INTERFACES RESEAU ===
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp1s0           UP             192.168.122.64/24 metric 100 fe80::5054:ff:fe9d:33f1/64 
+=== DISQUES ===
+NAME   FSTYPE FSVER LABEL UUID                                 FSAVAIL FSUSE% MOUNTPOINTS
+sr0                                                                           
+vda                                                                           
+├─vda1                                                                        
+└─vda2 ext4   1.0         ed04fe21-8ca1-40c6-aae3-0b0bac23d965    9,1G    32% /
+=== EMPREINTE CLE SSH PUBLIQUE ===
+256 SHA256:XwHLt1/bXlys8pEX9R7Hm7kG+mdHFj9HlKT1Bxe8+Xw root@srvsource (ED25519)
+=== VERSION APPLICATIVE ===
+Version applicative TP1 : v1

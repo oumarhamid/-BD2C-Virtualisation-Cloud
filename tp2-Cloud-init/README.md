@@ -22,10 +22,10 @@
 
 ## Dossiers
 
-- `nocloud/` : fichiers source `user-data`, `meta-data`, `network-config`.
-- `profiles/` : configurations YAML des rôles.
+- `cloud-init/` : fichiers source `user-data`, `meta-data`, `network-config`.
+- `profils/` : configurations YAML des rôles.
 - `templates/` : modèles Jinja2.
-- `inventory/` : inventaires des VM.
+- `inventaire/` : inventaires des VM.
 - `generated/` : configurations générées **à contrôler avant publication**.
 - `captures/` : preuves du TP, sans secrets.
 

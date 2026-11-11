@@ -1,4 +1,4 @@
-﻿# TP1 - Virtualisation KVM/QEMU et libvirt
+# TP1 - Virtualisation KVM/QEMU et libvirt
 
 Master BD2C - FSAC - 2026/2027
 
@@ -27,7 +27,7 @@ Master BD2C - FSAC - 2026/2027
 
 - captures/ : captures des manipulations
 - preuves/ : resultats techniques TXT, XML et SHA256
-- commandes/ : commandes reproductibles
+- scripts/ : commandes reproductibles
 
 Les gros disques virtuels QCOW2 restent stockes localement.
 Le compte rendu final et les questions seront completes.

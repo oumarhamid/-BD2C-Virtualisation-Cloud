@@ -12,8 +12,8 @@ Ce dépôt regroupe les travaux pratiques du module **Virtualisation et Cloud Co
 
 | TP | Sujet | État |
 |---|---|---|
-| [TP1](TP1-KVM-QEMU-Libvirt/) | Virtualisation avec KVM/QEMU et libvirt : VM, clones, images d'OS, templates | **En cours — exercices 1 à 8 réalisés** |
-| [TP2](TP2-Cloud-Init/) | Personnalisation et automatisation avec Cloud-Init | **À réaliser** |
+| [TP1](tp1-KVM/) | Virtualisation avec KVM/QEMU et libvirt : VM, clones, images d'OS, templates | **En cours — exercices 1 à 8 terminés ; exercice 9 en cours** |
+| [TP2](tp2-Cloud-init/) | Personnalisation et automatisation avec Cloud-Init | **À réaliser** |
 
 ## TP1 — Objectifs
 
@@ -56,7 +56,7 @@ Les VM sont exécutées **successivement** en raison des ressources matérielles
 | G | 11 | Étude des formats RAW/QCOW2 | À faire |
 | H | 12 | Études de cas professionnels | À faire |
 
-Pour le suivi synthétique, voir **[AVANCEMENT.md](TP1-KVM-QEMU-Libvirt/AVANCEMENT.md)**.
+Pour le suivi synthétique, voir **[AVANCEMENT.md](tp1-KVM/AVANCEMENT.md)**.
 
 ### Machines virtuelles et images créées
 
@@ -69,7 +69,7 @@ Pour le suivi synthétique, voir **[AVANCEMENT.md](TP1-KVM-QEMU-Libvirt/AVANCEME
 
 Le fichier `/opt/tp1/version.txt` contient **`Version applicative TP1 : v1`**. Sa présence dans la VM restaurée prouve que le système installé et sa personnalisation ont été récupérés.
 
-L'image capturée a une capacité virtuelle de **15 Gio** et une occupation observée d'environ **4,13 Gio** au moment du contrôle. Son empreinte SHA-256 est conservée dans [`capture.sha256`](TP1-KVM-QEMU-Libvirt/preuves/capture.sha256). L'export de la définition libvirt est conservé dans [`capture-config.xml`](TP1-KVM-QEMU-Libvirt/preuves/capture-config.xml).
+L'image capturée a une capacité virtuelle de **15 Gio** et une occupation observée d'environ **4,13 Gio** au moment du contrôle. Son empreinte SHA-256 est conservée dans [`capture.sha256`](tp1-KVM/preuves/capture.sha256). L'export de la définition libvirt est conservé dans [`capture-config.xml`](tp1-KVM/preuves/capture-config.xml).
 
 > Cette capture est **non généralisée** : elle conserve notamment l'identité système et le nom d'hôte de la source. Elle ne remplace pas un template préparé pour le déploiement de plusieurs serveurs.
 
@@ -77,13 +77,13 @@ L'image capturée a une capacité virtuelle de **15 Gio** et une occupation obse
 
 Les éléments du TP1 sont classés dans :
 
-- [`captures/`](TP1-KVM-QEMU-Libvirt/captures/) — **17 captures** pour les parties A à D, dont :
-  - [`C6-01_Comparaison_UUID_MAC.png`](TP1-KVM-QEMU-Libvirt/captures/C6-01_Comparaison_UUID_MAC.png) — comparaison des identités libvirt et réseau ;
-  - [`C6-03_Independance_Disques.png`](TP1-KVM-QEMU-Libvirt/captures/C6-03_Independance_Disques.png) — vérification de l'indépendance du clone ;
-  - [`D7-01_Controle_Image_OS.png`](TP1-KVM-QEMU-Libvirt/captures/D7-01_Controle_Image_OS.png) — inspection et contrôle de l'image ;
-  - [`D8-01_Restauration_Image_OS.png`](TP1-KVM-QEMU-Libvirt/captures/D8-01_Restauration_Image_OS.png) — système restauré et fichier témoin.
-- [`preuves/`](TP1-KVM-QEMU-Libvirt/preuves/) — diagnostics, inventaires, configuration XML et sommes de contrôle.
-- [`commandes/`](TP1-KVM-QEMU-Libvirt/commandes/) — emplacement prévu pour les commandes reproductibles.
+- [`captures/`](tp1-KVM/captures/) — **20 captures** pour les parties A à E, dont :
+  - [`C6-01_Comparaison_UUID_MAC.png`](tp1-KVM/captures/C6-01_Comparaison_UUID_MAC.png) — comparaison des identités libvirt et réseau ;
+  - [`C6-03_Independance_Disques.png`](tp1-KVM/captures/C6-03_Independance_Disques.png) — vérification de l'indépendance du clone ;
+  - [`D7-01_Controle_Image_OS.png`](tp1-KVM/captures/D7-01_Controle_Image_OS.png) — inspection et contrôle de l'image ;
+  - [`D8-01_Restauration_Image_OS.png`](tp1-KVM/captures/D8-01_Restauration_Image_OS.png) — système restauré et fichier témoin.
+- [`preuves/`](tp1-KVM/preuves/) — diagnostics, inventaires, configuration XML et sommes de contrôle.
+- [`scripts/`](tp1-KVM/scripts/) — emplacement prévu pour les commandes reproductibles.
 
 ### Points techniques démontrés
 

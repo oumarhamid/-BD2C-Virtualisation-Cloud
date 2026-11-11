@@ -33,6 +33,6 @@ Les variables d'environnement doivent être redéfinies dans chaque nouveau term
 
 - `captures/` : captures numérotées, sans informations privées.
 - `preuves/` : fichiers texte de validation (XML libvirt, sommes SHA-256, etc.).
-- `commandes/` : scripts et commandes reproductibles, ajoutés après validation.
+- `scripts/` : scripts et commandes reproductibles, ajoutés après validation.
 
 **Ne pas placer les disques QCOW2, l'ISO ni les clés SSH privées dans ce dépôt.**
